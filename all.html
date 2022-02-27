@@ -13,19 +13,17 @@
     <link rel="stylesheet" href="style/style.css" />
     <title>Your Health</title>
   </head>
-  <body>
+  <body class="back">
     <div class="background"></div>
     <header class="head">
       <div>
         <h1><span style="color: rgb(0, 179, 155)">WYD</span></h1>
       </div>
-      <nav class="nav">
+      <nav id="back" class="nav">
         <a href="index.html">Home</a>
         <a href="stats.html">Stats</a>
-        <a class="current" href="all.html">All Time Stats</a>
-        <a data-bs-toggle="modal" data-bs-target="#exampleModal">
-          Focus Questions
-        </a>
+        <a class="current" href="all.html">All Stats</a>
+        <a data-bs-toggle="modal" data-bs-target="#exampleModal"> Questions </a>
         <a href="#">Sign Out</a>
       </nav>
     </header>
@@ -50,29 +48,36 @@
           </div>
           <div class="modal-body">
             <div>
-              <form class="forma" action="www.google.lt">
+              <form class="forma" action="#">
                 <h3>Focus Questions</h3>
                 <span class="in-line space"
-                  ><p>How long where you walking today?</p>
-                  <div class="in-line">
-                    <input type="number" />
-                    <p>Hours</p>
-                  </div></span
-                >
-                <span class="in-line space"
-                  ><p>How many meals had for today?</p>
-                  <div class="in-line">
-                    <input type="number" />
-                    <p>Hours</p>
-                  </div>
+                  ><p class="margin">
+                    How long have you been concentrated today?
+                  </p>
                 </span>
+                <div class="in-line">
+                  <input type="number" />
+                  <p class="margin">Hours</p>
+                </div>
                 <span class="in-line space"
-                  ><p>How many hours have you studied/worked?</p>
-                  <div class="in-line">
-                    <input type="number" />
-                    <p>Hours</p>
-                  </div></span
-                >
+                  ><p class="margin">How many hours have you studied/worked?</p>
+                </span>
+                <div class="in-line">
+                  <input type="number" />
+                  <p class="margin">Hours</p>
+                </div>
+                <span class="in-line space"
+                  ><p class="margin">
+                    Are you satisfied with your productivity today?
+                  </p>
+                </span>
+                <div class="in-line">
+                  <select name="options" id="opt">
+                    <option value="yes">Yes</option>
+                    <option value="kinda">Kinda</option>
+                    <option value="no">No</option>
+                  </select>
+                </div>
               </form>
             </div>
           </div>
@@ -98,12 +103,15 @@
 
     <div class="stats-all">
       <h2 class="status-all">All Your Stats:</h2>
-      <a href="#this-week">This Week</a>
-      <a href="#this-month">This Month</a>
-      <a href="#this-year">This Year</a>
+      <div class="scroll-menu">
+        <a href="#this-week">This Week</a>
+        <a href="#this-month">This Month</a>
+        <a href="#this-year">This Year</a>
+        <a href="#back">Back</a>
+      </div>
     </div>
 
-    <div id="this-week" class="data-show-first full-sc">
+    <div id="this-week" class="data-show-first-all full-sc">
       <h3 class="name">This Week</h3>
       <div class="data-show">
         <div class="col">
@@ -111,19 +119,19 @@
           <p>Calories :</p>
           <p>Meals per Day :</p>
           <h4>Activity</h4>
-          <p>Steps:</p>
-          <p>Exercise:</p>
+          <p>Steps :</p>
+          <p>Exercise :</p>
           <h4>Sleep</h4>
           <p>Deep sleep :</p>
           <p>REM :</p>
           <h4>Productivity</h4>
-          <p>Hours of Productivity:</p>
-          <p>Concentration Level:</p>
+          <p>Hours of Productivity :</p>
+          <p>Concentration Level :</p>
         </div>
         <img class="images" src="img/Unknown-3.png" alt="" />
       </div>
     </div>
-    <div id="this-month" class="data-show-first full-sc">
+    <div id="this-month" class="data-show-first-all full-sc">
       <h3 class="name">This Month</h3>
       <div class="data-show">
         <div class="col">
@@ -131,19 +139,19 @@
           <p>Calories :</p>
           <p>Meals per Day :</p>
           <h4>Activity</h4>
-          <p>Steps:</p>
-          <p>Exercise:</p>
+          <p>Steps :</p>
+          <p>Exercise :</p>
           <h4>Sleep</h4>
           <p>Deep sleep :</p>
           <p>REM :</p>
           <h4>Productivity</h4>
-          <p>Hours of Productivity:</p>
-          <p>Concentration Level:</p>
+          <p>Hours of Productivity :</p>
+          <p>Concentration Level :</p>
         </div>
         <img class="images" src="img/Unknown-3.png" alt="" />
       </div>
     </div>
-    <div id="this-year" class="data-show-first full-sc">
+    <div id="this-year" class="data-show-first-all full-sc">
       <h3 class="name">This Year</h3>
       <div class="data-show">
         <div class="col">
@@ -151,14 +159,14 @@
           <p>Calories :</p>
           <p>Meals per Day :</p>
           <h4>Activity</h4>
-          <p>Steps:</p>
-          <p>Exercise:</p>
+          <p>Steps :</p>
+          <p>Exercise :</p>
           <h4>Sleep</h4>
           <p>Deep sleep :</p>
           <p>REM :</p>
           <h4>Productivity</h4>
-          <p>Hours of Productivity:</p>
-          <p>Concentration Level:</p>
+          <p>Hours of Productivity :</p>
+          <p>Concentration Level :</p>
         </div>
         <img class="images" src="img/Unknown-3.png" alt="" />
       </div>

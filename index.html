@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="style/style.css" />
     <title>WYD</title>
   </head>
-  <body>
+  <body class="back">
     <div class="background"></div>
     <header class="head">
       <div>
@@ -22,10 +22,8 @@
       <nav class="nav">
         <a class="current" href="index.html">Home</a>
         <a href="stats.html">Stats</a>
-        <a href="all.html">All Time Stats</a>
-        <a data-bs-toggle="modal" data-bs-target="#exampleModal">
-          Tell us...
-        </a>
+        <a href="all.html">All Stats</a>
+        <a data-bs-toggle="modal" data-bs-target="#exampleModal"> Questions </a>
         <a href="#">Sign Out</a>
       </nav>
     </header>
@@ -40,7 +38,7 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Tell Us</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Focus Questions</h5>
             <button
               type="button"
               class="btn-close"
@@ -50,32 +48,36 @@
           </div>
           <div class="modal-body">
             <div>
-              <form class="forma" action="www.google.lt">
+              <form class="forma" action="#">
                 <h3>Focus Questions</h3>
                 <span class="in-line space"
-                  ><p>How long many hours have you been concentrated today?</p>
-                  <div class="in-line">
-                    <input type="number" />
-                    <p>Hours</p>
-                  </div></span
-                >
-                <span class="in-line space"
-                  ><p>Are you satisfied with your productivity today?</p>
-                  <div class="in-line">
-                    <select name="options" id="opt">
-                      <option value="yes">Yes</option>
-                      <option value="kinda">Kinda</option>
-                      <option value="no">No</option>
-                    </select>
-                  </div>
+                  ><p class="margin">
+                    How long have you been concentrated today?
+                  </p>
                 </span>
+                <div class="in-line">
+                  <input type="number" />
+                  <p class="margin">Hours</p>
+                </div>
                 <span class="in-line space"
-                  ><p>How many hours have you studied/worked?</p>
-                  <div class="in-line">
-                    <input type="number" />
-                    <p>Hours</p>
-                  </div></span
-                >
+                  ><p class="margin">How many hours have you studied/worked?</p>
+                </span>
+                <div class="in-line">
+                  <input type="number" />
+                  <p class="margin">Hours</p>
+                </div>
+                <span class="in-line space"
+                  ><p class="margin">
+                    Are you satisfied with your productivity today?
+                  </p>
+                </span>
+                <div class="in-line">
+                  <select name="options" id="opt">
+                    <option value="yes">Yes</option>
+                    <option value="kinda">Kinda</option>
+                    <option value="no">No</option>
+                  </select>
+                </div>
               </form>
             </div>
           </div>
@@ -113,6 +115,8 @@
 
       <p class="info">About our app</p>
     </div>
+
+    <div class="pic"></div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
